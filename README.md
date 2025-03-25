@@ -24,7 +24,7 @@ A FRED API key (get one from fred.stlouisfed.org)
 
 Installation
 Clone the repo:
-git clone https://github.com/yourusername/RecessionPredictor.git
+git clone https://github.com/BobPick/RecessionPredictor.git
 cd RecessionPredictor
 
 Set up a virtual environment (optional):
