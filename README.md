@@ -2,7 +2,7 @@
 This is a Python tool that predicts U.S. recession probabilities for 3 months, 6 months, and 12 months using economic data from the FRED API and a Random Forest Classifier.
 
 ## Overview
-The script pulls data like GDP, yield spread, unemployment rate, CPI, and NASDAQ returns from FRED, processes it, and trains models to forecast recession odds. It outputs classification reports, the latest probabilities, and separate plots for each time horizon showing trends with recession periods shaded. It’s set to run as of March 25, 2025, with data up to February 28, 2025.
+The script pulls data like GDP, yield spread, unemployment rate, CPI, and NASDAQ returns from FRED, processes it, and trains models to forecast recession odds. It outputs classification reports, the latest probabilities, and separate plots for each time horizon showing trends with recession periods shaded. It’s set to run as of the day you run it, with data up to February 28, 2025. This date will change as the year progresses.
 ![Example](https://github.com/Bobpick/Recession/blob/main/Figure_1.png)
 
 ## Features
