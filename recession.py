@@ -49,11 +49,11 @@ df['Recession_Next_3M'] = df['Recession'].shift(-3)
 df['Recession_Next_6M'] = df['Recession'].shift(-6)
 df['Recession_Next_12M'] = df['Recession'].shift(-12)
 
-# Cut off at last full month
-today = datetime(2025, 3, 24)
-last_week = today - timedelta(days=7)
-last_full_month = last_week.replace(day=1) - timedelta(days=1)
-df_full = df.loc[:last_full_month.strftime('%Y-%m-%d')]
+# Cut off at last full month, dynamically based on current date
+today = datetime.today()  # Gets current date and time
+last_week = today - timedelta(days=7)  # One week back
+last_full_month = last_week.replace(day=1) - timedelta(days=1)  # End of previous month
+df_full = df.loc[:last_full_month.strftime('%Y-%m-%d')].copy()
 
 # Training data for each horizon
 df_train_3m = df_full.dropna(subset=['Recession_Next_3M'])
