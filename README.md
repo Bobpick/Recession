@@ -35,7 +35,7 @@ Install dependencies:
 pip install -r requirements.txt
 
 Add your FRED API key:
-Open Recession.py and replace 'bc99db999d7785fbbf9831eb230e89e5' with your key:
+Open Recession.py and replace 'YOURKEYHERE' with your key:
 fred = Fred(api_key='your_api_key_here')
 
 Requirements
